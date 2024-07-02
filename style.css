@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Nunito:ital,wght@0,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #56b2df;
+}
+.wrapper{
+    background:white;
+    height: 260px;
+    max-width:410px ;
+    border-radius: 20px;
+    padding: 16px 25px;
+    transition: height 0.2s ease;
+}
+.wrapper.active{
+    height:580px;
+}
+header h1{
+    font-size:25px;
+    font-weight:700;
+
+}
+header p{
+    font-size: 18px;
+    color: #474747;
+    margin-top: 10px;
+    
+}
+.wrapper .form{
+    margin:20px 0 30px;
+
+}
+.form :where(input, button){
+    width: 100%;
+    height: 55px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+}
+.form input{
+    border: 1px solid #999;
+    font-size: 18px;
+    padding: 0 17px;
+}
+.form button{
+    background:#56b2df;
+    margin-top: 10px;
+    color:white;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.wrapper img{
+    width: 90%;
+    margin: 12px 20px;
+    opacity: 0;
+    pointer-events: none;
+    border:1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display:flex;
+
+}
+.wrapper.active img{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
